@@ -1,0 +1,8 @@
+from day01.DBA.DBconfig import DBconfig
+# 配置ASCALL是否自动转义
+JSON_AS_ASCII = False
+
+# DBconfig
+SQLALCHEMY_DATABASE_URI = DBconfig.DB_URL
+
+SQLALCHEMY_TRACK_MODIFICATIONS = True

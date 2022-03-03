@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    {% block head %}
+
+    {% endblock %}
+</head>
+<body>
+    <form action="/login/" method="POST">
+        <h2>请输入用户名</h2>
+        <label>
+            <input type="text" name="uname">
+        </label>
+        <br>
+        <h2>请输入密码</h2>
+        <label>
+            <input type="password" name="password">
+        </label>
+        <br>
+        <input type="submit" value="登陆">
+        {{ login_info }}
+        {% block body %}
+        {% endblock %}
+    </form>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/css.css' ) }}">
+{% endblock %}
+{% block tittle %}
+    张源的Flask部署学习网站
+{% endblock %}
+
+{% block body %}
+    <h1>这里是Flask首页</h1>
+{% endblock %}
